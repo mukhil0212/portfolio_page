@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import SectionHeading from "./Section-heading";
 import { motion } from "framer-motion";
