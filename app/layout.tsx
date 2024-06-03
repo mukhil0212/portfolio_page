@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import Header from "./components/Header";
 import ActiveSectionContextProvider from "./context/active-section-context";
+import StarsCanvas from "./components/StarBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
         <ActiveSectionContextProvider>
           <Header />
+          <StarsCanvas />
           <main className="min-h-screen">{children}</main>
         </ActiveSectionContextProvider>
       </body>
