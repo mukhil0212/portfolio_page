@@ -64,10 +64,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello I'm Mukhil,</span> A{" "}
-        <span className="font-bold">rising senior</span> in Computer Science at{" "}
-        <span className="font-bold">Georgia State University</span>, graduating{" "}
-        in <span className="italic">Summer 2025</span>.
+        <span className="font-semibold">Hello I'm Mukhil,</span> A{" "}
+        <span className="font-semibold">rising senior</span> in Computer Science
+        at <span className="font-semibold">Georgia State University</span>,
+        graduating in <span className="italic">Summer 2025</span>.
       </motion.h1>
 
       <motion.div
