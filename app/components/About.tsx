@@ -17,14 +17,19 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        I'm currently a <span className="font-medium">rising senior</span> in
-        Computer Science at{" "}
-        <span className="font-medium">Georgia State University</span>,
-        graduating in <span className="italic">Summer 2025</span>. I have a
-        strong passion for data science and working with modern technologies. My
-        core stack includes{" "}
+        Since childhood, I've been fascinated by the inner workings of
+        computers. I was that kid who dismantled desktops just to peer at the
+        circuitry beneath, driven by curiosity and a desire to understand how
+        these machines functioned. This early passion for technology steered me
+        towards a career in computer science. I am now a{" "}
+        <span className="font-medium">rising senior</span> at{" "}
+        <span className="font-medium">Georgia State University</span>, set to
+        graduate in <span className="italic">Summer 2025</span>. My academic and
+        professional journeys are heavily influenced by my interest in data
+        science and utilizing modern technologies. My expertise primarily lies
+        in technologies such as{" "}
         <span className="font-medium">
           Python, SQL, PyTorch, React.js, Node.js,
         </span>{" "}
@@ -32,10 +37,12 @@ export default function About() {
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy learning
-        about <span className="font-medium">space</span>, cooking, and hanging
-        out with friends and family. I'm always eager to learn new things and
-        explore different fields.
+        <span className="italic">When I'm not coding,</span> I indulge in my
+        hobbies that include learning about{" "}
+        <span className="font-medium">space</span>, cooking, and spending
+        quality time with friends and family. I am constantly seeking to learn
+        new skills and dive into diverse fields, enriching both my personal and
+        professional life.
       </p>
     </motion.section>
   );
