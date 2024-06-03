@@ -34,7 +34,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Student Software Assistant",
+    title: "Student Assistant | Panther Dining",
     location: "Atlanta, GA",
     description:
       "Developed a stock inventory system using Flask, HTML, CSS, and AWS. Integrated AI/ML models for stock management and utilized Power BI for reporting. Streamlined data analysis using Pandas and Excel. Managed customer service and order processing.",
