@@ -15,16 +15,6 @@ export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
 
-  const lightThemeStyles = {
-    background: "#f3f4f6",
-    border: "1px solid rgba(0, 0, 0, 0.05)",
-  };
-
-  const darkThemeStyles = {
-    background: "rgba(255, 255, 255, 0.05)",
-    border: "1px solid rgba(255, 255, 255, 0.5)",
-  };
-
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
@@ -33,7 +23,10 @@ export default function Experience() {
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                ...(theme === "light" ? lightThemeStyles : darkThemeStyles),
+                background:
+                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                boxShadow: "none",
+                border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
@@ -49,7 +42,6 @@ export default function Experience() {
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
-                color: theme === "light" ? "#000" : "#fff",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
