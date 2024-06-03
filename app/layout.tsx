@@ -1,6 +1,11 @@
 // app/layout.tsx
 import "./globals.css";
+import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import Header from "./components/Header";
+import ActiveSectionContextProvider from "./context/active-section-context";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -13,8 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="!scroll-smooth">
+      <body
+        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+      >
+        <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+        <ActiveSectionContextProvider>
+          <Header />
+          <main className="min-h-screen">{children}</main>
+        </ActiveSectionContextProvider>
+      </body>
     </html>
   );
 }

@@ -1,16 +1,15 @@
-import dynamic from "next/dynamic";
-
-// Dynamically import the Navbar and Hero components with SSR disabled
-const Navbar = dynamic(() => import("./components/Navbar"), { ssr: false });
-const Hero = dynamic(() => import("./components/Hero"), { ssr: false });
-
+import About from "./components/About";
+import Intro from "./components/Intro";
+import Projects from "./components/Projects";
+import Sectiondivider from "./components/Section-divider";
 const Page = () => {
   return (
-    <div>
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-      <Navbar />
-      <Hero />
-    </div>
+    <main className="flex flex-col items-center px-4">
+      <Intro />
+      <Sectiondivider />
+      <About />
+      <Projects />
+    </main>
   );
 };
 
