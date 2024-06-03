@@ -5,6 +5,10 @@ import type { Metadata } from "next";
 import Header from "./components/Header";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import StarsCanvas from "./components/StarBackground";
+import Footer from "./components/Footer";
+import ThemeContextProvider from "./context/theme-context";
+import { Toaster } from "react-hot-toast";
+import ThemeSwitch from "./components/Theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,11 +28,16 @@ export default function RootLayout({
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-        <ActiveSectionContextProvider>
-          <Header />
-          <StarsCanvas />
-          <main className="min-h-screen">{children}</main>
-        </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            <StarsCanvas />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+            <Toaster position="top-right" />
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
