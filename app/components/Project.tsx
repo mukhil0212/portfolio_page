@@ -48,9 +48,9 @@ export default function Project({
               </li>
             ))}
           </ul>
-          {liveUrl && (
+          {linkUrl && (
             <a
-              href={liveUrl}
+              href={linkUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center text-blue-500 hover:text-blue-600 transition"
