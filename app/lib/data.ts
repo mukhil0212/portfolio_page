@@ -1,9 +1,9 @@
 import React from "react";
 import { FaChalkboardTeacher, FaFlask, FaDatabase } from "react-icons/fa";
 import { MdWork, MdSchool } from "react-icons/md";
-import corpcommentImg from "../../public/projects/corpcomment.png";
-import rmtdevImg from "../../public/projects/rmtdev.png";
-import wordanalyticsImg from "../../public/projects//wordanalytics.png";
+import gsucfa from "../../public/projects/gsucfa.png";
+import xray from "../../public/projects/xray.png";
+import madura from "../../public/projects/maduracreation.png";
 
 export const links = [
   {
@@ -56,21 +56,21 @@ export const projectsData = [
     description:
       "Developed a stock inventory system using Flask and AWS. Integrated AI/ML models and used Power BI for reporting. Streamlined data analysis with Pandas and Excel.",
     tags: ["Flask", "HTML", "CSS", "AWS", "AI/ML", "Power BI", "Pandas", "Excel", "HTTP"],
-    imageUrl: corpcommentImg,
+    imageUrl: gsucfa,
   },
   {
     title: "Pneumonia Detection from X-ray Images",
     description:
       "Developed a CNN using PyTorch for pneumonia detection from X-ray images, achieving over 90% accuracy.",
     tags: ["Python", "Pytorch", "OpenCV"],
-    imageUrl: rmtdevImg,
+    imageUrl: xray,
   },
   {
     title: "Madura Creation Portfolio Website",
     description:
       "Designed a portfolio website using React and Tailwind CSS. Integrated animations with Framer Motion and used Supabase for backend services.",
     tags: ["React", "TailwindCSS", "Framer Motion", "Vercel", "Supabase"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: madura,
   },
 ] as const;
 
