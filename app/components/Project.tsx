@@ -1,4 +1,8 @@
-import { FaExternalLinkAlt } from "react-icons/fa"; // Import an icon for the link
+import { useRef } from "react";
+import { projectsData } from "@/lib/data";
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa"; 
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -7,7 +11,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  liveUrl, // Include liveUrl in the props
+  liveUrl, 
 }: ProjectProps) {
   return (
     <div className="group mb-3 sm:mb-8 last:mb-0 flex flex-col">
