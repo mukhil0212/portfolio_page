@@ -55,9 +55,19 @@ export const projectsData = [
     title: "Inventory Management for Chickfil A",
     description:
       "Developed a stock inventory system using Flask and AWS. Integrated AI/ML models and used Power BI for reporting. Streamlined data analysis with Pandas and Excel.",
-    tags: ["Flask", "HTML", "CSS", "AWS", "AI/ML", "Power BI", "Pandas", "Excel", "HTTP"],
+    tags: [
+      "Flask",
+      "HTML",
+      "CSS",
+      "AWS",
+      "AI/ML",
+      "Power BI",
+      "Pandas",
+      "Excel",
+      "HTTP",
+    ],
     imageUrl: gsucfa,
-    linkUrl:"www.gsucfa/ims.com"
+    linkUrl: "www.gsucfa/ims.com",
   },
   {
     title: "Pneumonia Detection from X-ray Images",
@@ -65,6 +75,7 @@ export const projectsData = [
       "Developed a CNN using PyTorch for pneumonia detection from X-ray images, achieving over 90% accuracy.",
     tags: ["Python", "Pytorch", "OpenCV"],
     imageUrl: xray,
+    linkUrl: "",
   },
   {
     title: "Madura Creation Portfolio Website",
@@ -72,7 +83,7 @@ export const projectsData = [
       "Designed a portfolio website using React and Tailwind CSS. Integrated animations with Framer Motion and used Supabase for backend services.",
     tags: ["React", "TailwindCSS", "Framer Motion", "Vercel", "Supabase"],
     imageUrl: madura,
-    linkUrl:"www.maduracreation.com"
+    linkUrl: "www.maduracreation.com",
   },
 ] as const;
 
