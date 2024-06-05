@@ -2,23 +2,33 @@
 import React, { useState, useRef, useEffect, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
+import * as THREE from "three";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
 
 const StarBackground = (props: any) => {
-  const ref = useRef<any>();
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  );
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const ref = useRef<THREE.Points>(null);
+  const [sphere, setSphere] = useState<THREE.Vector3[]>([]);
 
-  // Correctly type the event parameter
+  useEffect(() => {
+    const points = new Float32Array(5000 * 3); // Creating a buffer for 5000 points each with 3 coordinates (x, y, z)
+    setSphere(
+      random
+        .inSphere(points, { radius: 1.2 })
+        .map(
+          (val: number, idx: number, arr: Float32Array) =>
+            new THREE.Vector3(arr[idx], arr[idx + 1], arr[idx + 2])
+        )
+    );
+  }, []);
+
   const handleMouseMove = (event: MouseEvent) => {
-    setMousePosition({
-      x: (event.clientX / window.innerWidth) * 2 - 1,
-      y: -(event.clientY / window.innerHeight) * 2 + 1,
-    });
+    const x = (event.clientX / window.innerWidth) * 2 - 1;
+    const y = -(event.clientY / window.innerHeight) * 2 + 1;
+    setMousePosition(new THREE.Vector2(x, y));
   };
+
+  const [mousePosition, setMousePosition] = useState(new THREE.Vector2(0, 0));
 
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
@@ -29,8 +39,14 @@ const StarBackground = (props: any) => {
 
   useFrame(() => {
     if (ref.current) {
-      ref.current.rotation.x = mousePosition.y * 0.5;
-      ref.current.rotation.y = mousePosition.x * 0.5;
+      sphere.forEach((position: THREE.Vector3, index: number) => {
+        if (index % 5 === 0) {
+          position.x += (mousePosition.x - position.x) * 0.01;
+          position.y += (mousePosition.y - position.y) * 0.01;
+        }
+      });
+      ref.current.rotation.x += 0.001;
+      ref.current.rotation.y += 0.001;
     }
   });
 
