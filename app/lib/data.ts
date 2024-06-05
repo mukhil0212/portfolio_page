@@ -67,7 +67,7 @@ export const projectsData = [
       "HTTP",
     ],
     imageUrl: gsucfa,
-    linkUrl: "www.gsucfa/ims.com",
+    linkUrl: "https://www.gsucfa/ims.com",
   },
   {
     title: "Pneumonia Detection from X-ray Images",
@@ -83,7 +83,7 @@ export const projectsData = [
       "Designed a portfolio website using React and Tailwind CSS. Integrated animations with Framer Motion and used Supabase for backend services.",
     tags: ["React", "TailwindCSS", "Framer Motion", "Vercel", "Supabase"],
     imageUrl: madura,
-    linkUrl: "www.maduracreation.com",
+    linkUrl: "https://www.maduracreation.com",
   },
 ] as const;
 
