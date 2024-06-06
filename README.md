@@ -19,69 +19,18 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - **Smooth Animations**: Enhancing user experience with fluid animations using Framer Motion.
 - **Dark Mode**: Eye-friendly dark mode toggle to reduce strain during night-time browsing.
 
-## 🛠 Installation
-
-To get a local copy up and running, follow these simple steps:
-
-### Prerequisites
-
-- Node.js and npm/yarn installed.
-
-### Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourusername/portfolio-website.git
-```
-
-2. **Install dependencies**
-
-```bash
-cd portfolio-website
-npm install
-# or
-yarn install
-```
-
-3. **Run the development server**
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. **Open in your browser**
-
-Navigate to [http://localhost:3000](http://localhost:3000) to see the project in action.
-
 ## 🌐 Deployment
 
 This project is deployed on Vercel. Any changes pushed to the `main` branch are automatically deployed to the live site.
 
 ## 🛡 Security
 
-If you discover any security-related issues, please email me at your.email@example.com instead of using the issue tracker.
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to be, learn, and create. Any contributions you make are **greatly appreciated**.
-
-1. **Fork the Project**
-2. **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the Branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
+If you discover any security-related issues, please email me at mukhil.baskaran27@gmail.com instead of using the issue tracker.
 
 ## 📧 Contact
 
-Mukhil Baskaran - your.email@example.com
+Mukhil Baskaran - mukhil.baskaran27@gmail.com
 
-Project Link: (https//www.mukhilbaskaran.com)
-
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Live Link: [Mukhil Baskaran](https//mukhilbaskaran.com)
 
 ---
