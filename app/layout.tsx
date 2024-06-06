@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
-        <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(125%_125%_at_50%_10%,rgba(255,223,236,0.8)_10%,rgba(138,43,226,0.8)_60%)] dark:bg-[radial-gradient(125%_125%_at_50%_10%,rgba(0,0,0,0.8)_10%,rgba(99,14,255,0.8)_60%)]"></div>{" "}
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />

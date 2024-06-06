@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3" style={{ textAlign: "justify" }}>
         Since childhood, I've been fascinated by the inner workings of
         computers. I was that kid who dismantled desktops just to peer at the
         circuitry beneath, driven by curiosity and a desire to understand how
@@ -36,7 +36,7 @@ export default function About() {
         and <span className="font-medium">Tailwind CSS</span>.
       </p>
 
-      <p>
+      <p style={{ textAlign: "justify" }}>
         <span className="italic">When I'm not coding,</span> I indulge in my
         hobbies that include learning about{" "}
         <span className="font-medium">space</span>, cooking, and spending
