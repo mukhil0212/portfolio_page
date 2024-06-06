@@ -31,6 +31,6 @@ If you discover any security-related issues, please email me at mukhil.baskaran2
 
 Mukhil Baskaran - mukhil.baskaran27@gmail.com
 
-Live Link: [Mukhil Baskaran](https//mukhilbaskaran.com)
+Live Link: [Mukhil Baskaran](www.mukhilbaskaran.com)
 
 ---
