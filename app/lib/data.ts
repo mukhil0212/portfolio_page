@@ -83,7 +83,7 @@ export const projectsData = [
       "Designed a portfolio website using React and Tailwind CSS. Integrated animations with Framer Motion and used Supabase for backend services.",
     tags: ["React", "TailwindCSS", "Framer Motion", "Vercel", "Supabase"],
     imageUrl: madura,
-    linkUrl: "https://www.maduracreation.com",
+    linkUrl: "https://madura-creation.vercel.app",
   },
 ] as const;
 
